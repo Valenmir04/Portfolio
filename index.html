@@ -10,7 +10,7 @@
   <meta property="og:image" content="https://framerusercontent.com/images/5drVzdfrNWL1Cp1cWm28UonGpg8.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236d1c2e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23f5efe4' text-anchor='middle'%3EVM%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236d1c2e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23f5efe4' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@
   <symbol id="i-meta" viewBox="0 0 24 24"><path d="M3 15c0-4 2-8 4.5-8C11 7 13 17 16.5 17 19 17 21 15 21 12s-1.5-5-3.5-5C14 7 10 17 7 17c-2.5 0-4-1-4-2z"/></symbol>
   <symbol id="i-framer" viewBox="0 0 24 24"><path d="M5 3h14v6H12zM5 9h7l7 6H12v6l-7-6z"/></symbol>
   <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></symbol>
   <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
 </svg>
 
@@ -109,7 +110,7 @@
           <img src="https://framerusercontent.com/images/cHtQApJ9KKqY9sJkARBXMcEuMB4.png" alt="Tuits de Volodímir Zelenski analizados en el trabajo" loading="lazy">
         </div>
         <div class="featured-body">
-          <span class="badge" style="align-self:flex-start"><svg class="icon"><use href="#i-star"/></svg>Nominado a Mejor TIF del año</span>
+          <span class="badge shine" style="align-self:flex-start"><svg class="icon"><use href="#i-star"/></svg>Nominado a Mejor TIF del año</span>
           <span class="kicker">Trabajo Integrador Final</span>
           <h3>Narrativas en Guerra</h3>
           <p>Un estudio de caso sobre la comunicación digital de Volodímir Zelenski en X.</p>
@@ -153,7 +154,37 @@
         </a>
       </div>
 
-      <div id="redaccion" style="padding-top:60px">
+      <div id="personales" class="personal">
+        <p class="eyebrow reveal">Proyectos personales</p>
+        <h2 class="section-title reveal">Siempre aprendiendo algo <em>nuevo</em></h2>
+        <p class="personal-intro reveal">Soy inquieta y estoy en constante aprendizaje. Me gusta detectar necesidades del día a día y resolverlas con herramientas digitales: así nacieron estos proyectos, que pensé, diseñé y desarrollé por mi cuenta, apoyándome en la inteligencia artificial.</p>
+        <div class="personal-grid">
+          <a class="card pp reveal" href="page-changuito.html">
+            <!-- Para poner la foto: reemplazar este bloque por <div class="photo-slot"><img src="assets/img/changuito.jpg" alt="Changuito"></div> -->
+            <div class="photo-slot"><span class="ph"><svg class="icon"><use href="#i-image"/></svg>Changuito</span></div>
+            <div class="pp-body">
+              <span class="kicker">Datos abiertos · Desarrollo web</span>
+              <h3>Changuito</h3>
+              <p>Comparador de precios de supermercados de CABA con datos abiertos oficiales, que se actualiza solo todos los días. Suma una calculadora de recetas para emprendimientos gastronómicos: costos, precio de venta y ganancia de cada producto.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">Datos abiertos</span><span class="tag">Automatización</span><span class="tag">IA</span></div>
+              <span class="link-arrow">Ver detalles <span class="arr">→</span></span>
+            </div>
+          </a>
+          <a class="card pp reveal d1" href="page-mis-cuentas.html">
+            <!-- Para poner la foto: reemplazar este bloque por <div class="photo-slot"><img src="assets/img/mis-cuentas.jpg" alt="Mis Cuentas"></div> -->
+            <div class="photo-slot"><span class="ph"><svg class="icon"><use href="#i-image"/></svg>Mis Cuentas</span></div>
+            <div class="pp-body">
+              <span class="kicker">Automatización · Finanzas personales</span>
+              <h3>Mis Cuentas</h3>
+              <p>No encontraba ninguna app de gastos que se adaptara a lo que necesitaba, así que diseñé la mía: cargo mis gastos hablándole a Siri y los veo organizados, con gráficos, en una web propia.</p>
+              <div class="tags"><span class="tag">Siri</span><span class="tag">Google Sheets</span><span class="tag">Apps Script</span><span class="tag">IA</span></div>
+              <span class="link-arrow">Ver detalles <span class="arr">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="redaccion" style="padding-top:80px">
         <h2 class="redaccion-title reveal">Mis trabajos de <em>redacción</em></h2>
         <div class="grid-2">
           <a class="card writing reveal" href="page-texto1.html">
