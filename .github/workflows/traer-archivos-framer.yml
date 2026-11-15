@@ -1,0 +1,40 @@
+# Descarga una sola vez las imágenes, el video y el CV que estaban en los servidores de Framer,
+# los guarda en assets/framer/ y cambia los links de las páginas para usar esas copias.
+name: Traer archivos de Framer
+
+on:
+  push:
+    paths:
+      - .github/framer-urls.txt
+      - .github/workflows/traer-archivos-framer.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  traer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar archivos
+        run: |
+          mkdir -p assets/framer
+          while read -r url; do
+            [ -z "$url" ] && continue
+            nombre=$(basename "$url")
+            curl -fsSL --retry 3 -o "assets/framer/$nombre" "$url"
+            echo "OK $nombre"
+          done < .github/framer-urls.txt
+      - name: Cambiar los links en las páginas
+        run: |
+          sed -i -E 's#https://framerusercontent\.com/(images|assets)/([A-Za-z0-9]+\.(png|jpg|jpeg|webp|pdf|mp4))(\?[^"]*)?#assets/framer/\2#g' *.html
+          # og:image necesita la dirección completa
+          sed -i 's#content="assets/framer/#content="https://valentinamirandaportfolio.com.ar/assets/framer/#g' index.html
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Copiar a este repositorio los archivos que estaban en Framer"
+          git push
