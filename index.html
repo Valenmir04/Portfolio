@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valentina Miranda · Portfolio</title>
+  <meta name="description" content="Portfolio de Valentina Miranda, Licenciada en Comunicación Digital e Interactiva. Proyectos, redacción, herramientas y experiencia.">
+  <meta property="og:title" content="Valentina Miranda · Portfolio">
+  <meta property="og:description" content="Licenciada en Comunicación Digital e Interactiva. Proyectos, redacción, herramientas y experiencia.">
+  <meta property="og:image" content="https://framerusercontent.com/images/5drVzdfrNWL1Cp1cWm28UonGpg8.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%236d1c2e'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='%23f5efe4' text-anchor='middle'%3EVM%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<!-- Íconos reutilizables -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16M5 13l7 7 7-7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1"/><circle cx="17.5" cy="10.5" r="1"/><circle cx="8.5" cy="7.5" r="1"/><circle cx="6.5" cy="12.5" r="1"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7H16a6 6 0 0 0 6-6c0-4.9-4.5-8.4-10-8.4z"/></symbol>
+  <symbol id="i-bot" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="3"/><path d="M12 8V4M8 4h8M9 14v1M15 14v1"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+  <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+  <symbol id="i-meta" viewBox="0 0 24 24"><path d="M3 15c0-4 2-8 4.5-8C11 7 13 17 16.5 17 19 17 21 15 21 12s-1.5-5-3.5-5C14 7 10 17 7 17c-2.5 0-4-1-4-2z"/></symbol>
+  <symbol id="i-framer" viewBox="0 0 24 24"><path d="M5 3h14v6H12zM5 9h7l7 6H12v6l-7-6z"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-3v10l-6-3"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></symbol>
+</svg>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="#inicio">Valentina Miranda <span class="brand-pill">PORTFOLIO</span></a>
+    <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#recomendaciones">Recomendaciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ INICIO ============ -->
+  <section id="inicio" class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="hero-hello reveal">¡Hola! Te presento mi portfolio</p>
+          <h1 class="hero-name"><span>Valentina</span><span>Miranda</span></h1>
+          <p class="hero-role reveal d1">Licenciada en Comunicación Digital e Interactiva</p>
+          <p class="hero-text reveal d2">
+            Me apasiona convertir ideas en mensajes claros y piezas digitales que conectan con las personas: desde
+            <span class="rotator" data-words="comunicación digital|visualización de datos|redacción|diseño|contenido">comunicación digital</span>,
+            hasta proyectos que mezclan creatividad, estrategia y datos.
+          </p>
+        </div>
+        <div class="hero-photo">
+          <img src="https://framerusercontent.com/images/wTX2spaNQiHIaorspgYOGrdH7c.jpg" alt="Foto de Valentina Miranda">
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <a class="card contact-card reveal" href="mailto:valenpmiranda@gmail.com">
+          <span class="contact-ico bordo"><svg class="icon"><use href="#i-mail"/></svg></span>
+          <span><span class="contact-label">Email</span><br><span class="contact-value">valenpmiranda@<wbr>gmail.com</span></span>
+        </a>
+        <a class="card contact-card reveal d1" href="https://wa.me/5491132959156?text=%C2%A1Hola%21%20Vimos%20tu%20portfolio%20y%20quer%C3%ADamos%20hacerte%20una%20consulta..." target="_blank" rel="noopener">
+          <span class="contact-ico verde"><svg class="icon"><use href="#i-phone"/></svg></span>
+          <span><span class="contact-label">Celular</span><br><span class="contact-value">+54 9 11 3295-9156</span></span>
+        </a>
+        <a class="card contact-card reveal d2" href="https://www.linkedin.com/in/valentina-miranda-ba5892236" target="_blank" rel="noopener">
+          <span class="contact-ico azul"><svg class="icon"><use href="#i-in"/></svg></span>
+          <span><span class="contact-label">LinkedIn</span><br><span class="contact-value">Valentina Miranda</span></span>
+        </a>
+        <div class="card contact-card reveal d3">
+          <span class="contact-ico negro"><svg class="icon"><use href="#i-pin"/></svg></span>
+          <span><span class="contact-label">Ubicación</span><br><span class="contact-value">Versalles, CABA</span></span>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#proyectos">Deslizá para ver más <svg class="icon"><use href="#i-down"/></svg></a>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section id="proyectos">
+    <div class="wrap">
+      <p class="eyebrow reveal">Proyectos</p>
+      <h2 class="section-title reveal">Proyectos <em>académicos relevantes</em></h2>
+      <p class="section-sub reveal">Hacé clic en cada uno para ver los detalles.</p>
+
+      <a class="card featured reveal" href="page-tif.html">
+        <div class="featured-media">
+          <img src="https://framerusercontent.com/images/cHtQApJ9KKqY9sJkARBXMcEuMB4.png" alt="Tuits de Volodímir Zelenski analizados en el trabajo" loading="lazy">
+        </div>
+        <div class="featured-body">
+          <span class="badge" style="align-self:flex-start"><svg class="icon"><use href="#i-star"/></svg>Nominado a Mejor TIF del año</span>
+          <span class="kicker">Trabajo Integrador Final</span>
+          <h3>Narrativas en Guerra</h3>
+          <p>Un estudio de caso sobre la comunicación digital de Volodímir Zelenski en X.</p>
+          <div class="tags">
+            <span class="tag">Análisis de datos</span>
+            <span class="tag">Análisis del discurso</span>
+            <span class="tag">Investigación</span>
+            <span class="tag">Scraping</span>
+          </div>
+          <span class="btn">Ver detalles <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <div class="grid-3">
+        <a class="card project reveal" href="page-huellas.html">
+          <div class="project-media"><img src="https://framerusercontent.com/images/1vPMgL15IEoL5dwTmfLEzt0G5M.png" alt="Portada de Tras las huellas de nuestros ancestros" loading="lazy"></div>
+          <div class="project-body">
+            <span class="kicker">Periodismo de datos</span>
+            <h3>Tras las huellas de nuestros ancestros</h3>
+            <p>Proyecto grupal de scrollytelling que explora la distribución de los apellidos en Argentina, a partir de la investigación de datos abiertos del RENAPER.</p>
+            <span class="link-arrow">Ver detalles <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="card project reveal d1" href="page-pupilo.html">
+          <div class="project-media"><img src="https://framerusercontent.com/images/xrFYDYOIXfom1LkQqKryI8mH8rI.png" alt="Ilustración de la línea Doñas chismecito de Pupilo" loading="lazy"></div>
+          <div class="project-body">
+            <span class="kicker">Análisis y desarrollo de audiencias</span>
+            <h3>Pupilo</h3>
+            <p>Una estrategia de marketing digital integral para una marca de indumentaria argentina de nicho, con foco en el crecimiento de la comunidad y la conversión.</p>
+            <span class="link-arrow">Ver detalles <span class="arr">→</span></span>
+          </div>
+        </a>
+        <a class="card project reveal d2" href="page-recobot.html">
+          <div class="project-media"><img src="https://framerusercontent.com/images/kEgXY3CbJs3914iKCKuSokoAN8c.png" alt="Ilustración de RecoBot" loading="lazy"></div>
+          <div class="project-body">
+            <span class="kicker">Programación</span>
+            <h3>Recobot</h3>
+            <p>Bot realizado con Python, conectando la API de Telegram y Spotify, que ayuda a los usuarios a encontrar nuevas canciones a partir de un track que ellos propongan.</p>
+            <span class="link-arrow">Ver detalles <span class="arr">→</span></span>
+          </div>
+        </a>
+      </div>
+
+      <div id="redaccion" style="padding-top:60px">
+        <h2 class="redaccion-title reveal">Mis trabajos de <em>redacción</em></h2>
+        <div class="grid-2">
+          <a class="card writing reveal" href="page-texto1.html">
+            <span class="kicker">Crónica</span>
+            <h3>La emoción de un atardecer rosado</h3>
+            <p>Una crónica periodística que relata cómo la Ciudad de Buenos Aires se ilumina de color rosa en el Día Internacional contra el cáncer de mama.</p>
+            <span class="link-arrow">Leer crónica completa <span class="arr">→</span></span>
+          </a>
+          <a class="card writing azul reveal d1" href="page-texto2.html">
+            <span class="kicker">Semblanza</span>
+            <h3>Agujas autodescartables que revolucionaron la medicina: el legado de Carlos Arcusín en Argentina</h3>
+            <p>Entrevista y relato de uno de los mejores inventores de la Argentina.</p>
+            <span class="link-arrow">Leer semblanza completa <span class="arr">→</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HERRAMIENTAS ============ -->
+  <section id="herramientas">
+    <div class="wrap">
+      <p class="eyebrow reveal">Herramientas | Stack</p>
+      <h2 class="section-title reveal">Lo que uso para <em>crear</em></h2>
+
+      <div class="tools-grid">
+        <div class="card tool-card reveal">
+          <div class="tool-head"><span class="tool-ico bg-bordo"><svg class="icon"><use href="#i-palette"/></svg></span><h3>Herramientas de edición</h3></div>
+          <div class="chips">
+            <span class="chip"><span class="chip-ico bg-bordo">Ai</span>Adobe Illustrator</span>
+            <span class="chip"><span class="chip-ico bg-bordo">Ps</span>Photoshop</span>
+            <span class="chip"><span class="chip-ico bg-bordo">Xd</span>Adobe XD</span>
+            <span class="chip"><span class="chip-ico bg-bordo">F</span>Figma</span>
+            <span class="chip"><span class="chip-ico bg-bordo"><svg class="icon"><use href="#i-framer"/></svg></span>Framer</span>
+            <span class="chip"><span class="chip-ico bg-bordo"><svg class="icon"><use href="#i-video"/></svg></span>CapCut</span>
+            <span class="chip"><span class="chip-ico bg-bordo">C</span>Canva</span>
+          </div>
+        </div>
+        <div class="card tool-card reveal d1">
+          <div class="tool-head"><span class="tool-ico bg-verde"><svg class="icon"><use href="#i-bot"/></svg></span><h3>Herramientas de IA</h3></div>
+          <div class="chips">
+            <span class="chip"><span class="chip-ico bg-verde">GPT</span>ChatGPT</span>
+            <span class="chip"><span class="chip-ico bg-verde">Nlm</span>NotebookLM</span>
+            <span class="chip"><span class="chip-ico bg-verde">Cl</span>Claude</span>
+            <span class="chip"><span class="chip-ico bg-verde">Ge</span>Gemini</span>
+          </div>
+        </div>
+        <div class="card tool-card reveal d2">
+          <div class="tool-head"><span class="tool-ico bg-azul"><svg class="icon"><use href="#i-wrench"/></svg></span><h3>Otras herramientas</h3></div>
+          <div class="chips">
+            <span class="chip"><span class="chip-ico bg-azul"><svg class="icon"><use href="#i-chart"/></svg></span>Datawrapper</span>
+            <span class="chip"><span class="chip-ico bg-azul"><svg class="icon"><use href="#i-msg"/></svg></span>EnvíaloSimple</span>
+            <span class="chip"><span class="chip-ico bg-azul"><svg class="icon"><use href="#i-window"/></svg></span>WordPress</span>
+            <span class="chip"><span class="chip-ico bg-azul"><svg class="icon"><use href="#i-code"/></svg></span>Python</span>
+            <span class="chip"><span class="chip-ico bg-azul"><svg class="icon"><use href="#i-meta"/></svg></span>Meta Business</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="certs-title reveal">Cursos y certificaciones</p>
+      <div class="certs reveal">
+        <span class="tag">Artificial Intelligence Fundamentals - IBM SkillsBuild</span>
+        <span class="tag">Cambridge International Education - B1 Preliminary</span>
+        <span class="tag">Trinity College - Certificate in English</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section id="experiencia">
+    <div class="wrap">
+      <p class="eyebrow reveal">Experiencia</p>
+      <h2 class="section-title reveal">Experiencia <em>profesional</em></h2>
+
+      <div class="exp-grid">
+        <div class="timeline">
+          <div class="job reveal" style="--dot: var(--bordo)">
+            <p class="job-date">2025 – Actualidad</p>
+            <h3>Asistente de Marketing y Comunicación</h3>
+            <p class="job-place">TIP Travel</p>
+            <button class="job-toggle" aria-expanded="false">Ver detalles</button>
+            <div class="job-details"><ul>
+              <li>Creación y planificación de contenidos para redes sociales: LinkedIn, Instagram y YouTube.</li>
+              <li>Redacción de gacetillas de prensa y contenidos institucionales.</li>
+              <li>Desarrollo y ejecución de campañas de email marketing.</li>
+              <li>Producción audiovisual: grabación y edición de videos.</li>
+              <li>Coordinación operativa de la Escuela Politécnica de Turismo.</li>
+              <li>Implementación de herramientas de inteligencia artificial y automatización para optimizar procesos de trabajo.</li>
+            </ul></div>
+          </div>
+          <div class="job reveal d1" style="--dot: var(--verde)">
+            <p class="job-date">2022 – Actualidad</p>
+            <h3>Social Media Management</h3>
+            <p class="job-place">Freelance</p>
+            <button class="job-toggle" aria-expanded="false">Ver detalles</button>
+            <div class="job-details"><ul>
+              <li>Creación, planificación y gestión de calendarios de contenido para Instagram y Facebook.</li>
+              <li>Redacción de copys.</li>
+              <li>Configuración, gestión y seguimiento de campañas publicitarias en Meta Ads.</li>
+              <li>Elaboración de reportes mensuales e interpretación de métricas para evaluar resultados.</li>
+              <li>Análisis del rendimiento de los contenidos y detección de oportunidades de mejora.</li>
+              <li>Gestión de comunidad e interacción con las audiencias.</li>
+            </ul></div>
+          </div>
+          <div class="job reveal d2" style="--dot: var(--azul)">
+            <p class="job-date">2022 – 2024</p>
+            <h3>Asistente administrativa</h3>
+            <p class="job-place">Consultorio médico Dra. Patricia Epstein</p>
+            <button class="job-toggle" aria-expanded="false">Ver detalles</button>
+            <div class="job-details"><ul>
+              <li>Gestión administrativa y organización de documentación y registros.</li>
+              <li>Atención al público y gestión de consultas a través de correo electrónico, llamadas telefónicas y mensajes.</li>
+              <li>Optimización de procedimientos administrativos y digitalización de registros para mejorar la organización y la eficiencia operativa.</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="reveal d1">
+          <p class="gallery-label">Mi experiencia en imágenes</p>
+          <div class="gallery">
+            <img class="on" src="https://framerusercontent.com/images/wOmg7mlIlGEIRsueTELib4jjJhg.jpg" alt="Proyecto profesional — fotografía 1" loading="lazy">
+            <img src="https://framerusercontent.com/images/VLgfWwgr3qLHaweVcbeAADWnTjw.jpg" alt="Proyecto profesional — fotografía 2" loading="lazy">
+            <img src="https://framerusercontent.com/images/DJPJ7NL6MZsRcJzRsRMJhweQ0.jpg" alt="Proyecto profesional — fotografía 3" loading="lazy">
+            <img src="https://framerusercontent.com/images/DZYr0PqkTdL76KQNkQporddIfY.jpg" alt="Proyecto profesional — fotografía 4" loading="lazy">
+            <img src="https://framerusercontent.com/images/hZeZLOr0vnERkj8piJuk05q8cKo.jpg" alt="Proyecto profesional — fotografía 5" loading="lazy">
+            <div class="dots">
+              <button class="on" aria-label="Ver fotografía 1"></button>
+              <button aria-label="Ver fotografía 2"></button>
+              <button aria-label="Ver fotografía 3"></button>
+              <button aria-label="Ver fotografía 4"></button>
+              <button aria-label="Ver fotografía 5"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECOMENDACIONES ============ -->
+  <section id="recomendaciones">
+    <div class="wrap">
+      <p class="eyebrow reveal">Recomendaciones</p>
+      <h2 class="section-title reveal">Cartas de <em>recomendación</em></h2>
+      <p class="section-sub reveal">Algunos fragmentos de cartas de recomendación de docentes que acompañaron mi formación académica y que comparten su perspectiva sobre mi desempeño, compromiso y recorrido a lo largo de la carrera. Hacé clic en cada carta para leerla completa.</p>
+
+      <div class="letters">
+        <a class="card letter reveal" href="page-carta1.html">
+          <span class="quote-mark">“</span>
+          <blockquote>“[…] con ella a lo que accedés es a conocer y sumar a una persona que es colaborativa, detrás de un objetivo común […]”</blockquote>
+          <div class="letter-who">
+            <span class="avatar">HM</span>
+            <div>
+              <p class="letter-name">Héctor Massi</p>
+              <p class="letter-role">Productor-Guionista-Director · Profesor Audiovisual · Docente de la materia Guion</p>
+            </div>
+          </div>
+          <span class="link-arrow">Leer carta completa <span class="arr">→</span></span>
+        </a>
+        <a class="card letter verde reveal d1" href="page-carta2.html">
+          <span class="quote-mark">“</span>
+          <blockquote>“[…] Valentina es una persona respetuosa, honesta y con una excelente predisposición para el trabajo en equipo […]”</blockquote>
+          <div class="letter-who">
+            <span class="avatar">MB</span>
+            <div>
+              <p class="letter-name">Maximiliano Bongiovanni</p>
+              <p class="letter-role">Consultor en comunicación y estrategia digital · Docente de la materia Comunicación Corporativa y Asuntos Públicos</p>
+            </div>
+          </div>
+          <span class="link-arrow">Leer carta completa <span class="arr">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contacto">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <span class="blob azul"></span>
+        <span class="blob verde"></span>
+        <p class="eyebrow">Contacto</p>
+        <h2>Trabajemos juntos</h2>
+        <p>Si te gustó lo que viste, escribime. Me encantaría contarte más sobre mis proyectos.</p>
+        <div class="contact-grid">
+          <a class="contact-glass" href="mailto:valenpmiranda@gmail.com">
+            <svg class="icon"><use href="#i-mail"/></svg>
+            <span><span class="contact-label">Email</span><br><span class="contact-value">valenpmiranda@gmail.com</span></span>
+          </a>
+          <a class="contact-glass" href="https://wa.me/5491132959156?text=%C2%A1Hola%21%20Vimos%20tu%20portfolio%20y%20quer%C3%ADamos%20hacerte%20una%20consulta..." target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-phone"/></svg>
+            <span><span class="contact-label">Celular</span><br><span class="contact-value">+54 9 11 3295-9156</span></span>
+          </a>
+          <a class="contact-glass" href="https://www.linkedin.com/in/valentina-miranda-ba5892236" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#i-in"/></svg>
+            <span><span class="contact-label">LinkedIn</span><br><span class="contact-value">Valentina Miranda</span></span>
+          </a>
+          <div class="contact-glass">
+            <svg class="icon"><use href="#i-pin"/></svg>
+            <span><span class="contact-label">Ubicación</span><br><span class="contact-value">Versalles, CABA</span></span>
+          </div>
+        </div>
+        <!-- Cuando tengamos el PDF del CV en la carpeta, cambiar este link por: assets/cv-valentina-miranda.pdf -->
+        <a class="cv-btn" href="https://framerusercontent.com/assets/spxglcStMIGIAjz2kO0RFKuGBx8.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-download"/></svg>Ver mi CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">© 2026 Valentina Miranda · Portfolio</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
